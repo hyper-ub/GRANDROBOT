@@ -145,8 +145,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        url="t.me/Dojeto")],
                                                                                    [InlineKeyboardButton(text="ADD KAZUTO TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/legendx22/GRANDROBOT")
+                                                                                   InlineKeyboardButton(text="Support Group",
+                                                                       url="https://t.me/kazutosupport")
                                                                                  ]]))
 
     else:
