@@ -6,10 +6,3 @@ Credits - [Dojeto](https://t.me/Dojeto)
 
 # TELEGRAM
 Check me on [TELEGRAM](https://t.me/KazutoSuperbot)
-
-<details>
-<summary> CREDITS </summary>
-<h1> LEGEND X </h1>
-<h1> PROBOY X </h1>
-<h1> TEAMLEGEND </h1>
-</details>
