@@ -193,13 +193,13 @@ def punch(bot: Bot, update: Update, args: List[str]) -> str:
         return log_message
 
     if is_user_ban_protected(chat, user_id):
-        message.reply_text("I really wish I could punch this user....")
+        message.reply_text("I really wish I could Kick this user....")
         return log_message
 
     res = chat.unban_member(user_id)  # unban on current user = kick
     if res:
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
-        bot.sendMessage(chat.id, f"One Punched! {mention_html(member.user.id, member.user.first_name)}.",
+        bot.sendMessage(chat.id, f"One Kick On Ass! {mention_html(member.user.id, member.user.first_name)}.",
                         parse_mode=ParseMode.HTML)
         log = (f"<b>{html.escape(chat.title)}:</b>\n"
                f"#KICKED\n"
@@ -211,7 +211,7 @@ def punch(bot: Bot, update: Update, args: List[str]) -> str:
         return log
 
     else:
-        message.reply_text("Well damn, I can't punch that user.")
+        message.reply_text("Well damn, I can't Kick that user.")
 
     return log_message
 
