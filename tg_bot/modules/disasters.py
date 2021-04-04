@@ -552,22 +552,23 @@ def devlist(bot: Bot, update: Update):
 __help__ = """
  - /heroes - Lists all Hero Association members.
  - /dragons - Lists all Dragon disasters.
+ - /hackers - Lists all Hacker disasters.
  - /tigers - Lists all Tigers disasters.
  - /wolves - Lists all Wolf disasters.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo, pass_args=True)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport, pass_args=True)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "addhacker"), addsupport, pass_args=True)
 TIGER_HANDLER = CommandHandler(("addtiger"), addtiger, pass_args=True)
 WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addwolf"), addwhitelist, pass_args=True)
 UNSUDO_HANDLER = CommandHandler(("removesudo", "removedragon"), removesudo, pass_args=True)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"), removesupport, pass_args=True)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removehacker"), removesupport, pass_args=True)
 UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger, pass_args=True)
 UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removewolf"), removewhitelist, pass_args=True)
 
 WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "wolves"], whitelistlist)
 TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "hackers"], supportlist)
 SUDOLIST_HANDLER = CommandHandler(["sudolist", "dragons"], sudolist)
 DEVLIST_HANDLER = CommandHandler(["devlist", "heroes"], devlist)
 
