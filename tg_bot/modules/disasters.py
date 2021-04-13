@@ -479,7 +479,7 @@ def removetiger(bot: Bot, update: Update, args: List[str]) -> str:
 @run_async
 @whitelist_plus
 def whitelistlist(bot: Bot, update: Update):
-    reply = "<b>Known Wolf Disasters 🔥:</b>\n"
+    reply = "<b>Known explorer Disasters 🔥:</b>\n"
     for each_user in WHITELIST_USERS:
         user_id = int(each_user)
         try:
@@ -494,7 +494,7 @@ def whitelistlist(bot: Bot, update: Update):
 @run_async
 @whitelist_plus
 def tigerlist(bot: Bot, update: Update):
-    reply = "<b>Known Tiger Disasters 🔥:</b>\n"
+    reply = "<b>Known knights Disasters 🔥:</b>\n"
     for each_user in TIGER_USERS:
         user_id = int(each_user)
         try:
@@ -508,7 +508,7 @@ def tigerlist(bot: Bot, update: Update):
 @run_async
 @whitelist_plus
 def supportlist(bot: Bot, update: Update):
-    reply = "<b>Known HACKER Disasters 🔥:</b>\n"
+    reply = "<b>Known amateur Disasters 🔥:</b>\n"
     for each_user in SUPPORT_USERS:
         user_id = int(each_user)
         try:
@@ -523,7 +523,7 @@ def supportlist(bot: Bot, update: Update):
 @whitelist_plus
 def sudolist(bot: Bot, update: Update):
     true_sudo = list(set(SUDO_USERS) - set(DEV_USERS))
-    reply = "<b>Known Dragon Disasters 🔥:</b>\n"
+    reply = "<b>Known wielder Disasters 🔥:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -538,7 +538,7 @@ def sudolist(bot: Bot, update: Update):
 @whitelist_plus
 def devlist(bot: Bot, update: Update):
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Hero Association Members 🔥:</b>\n"
+    reply = "<b> List Of My Masters🔥:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -550,11 +550,11 @@ def devlist(bot: Bot, update: Update):
 
 
 __help__ = """
- - /masters - Lists all Hero Association members.
- - /wielder - Lists all Dragon disasters.
- - /amateur - Lists all Hacker disasters.
- - /knights - Lists all Tigers disasters.
- - /explorer - Lists all Wolf disasters.
+ - /masters - Lists Of all Masters.
+ - /wielder - Lists Of all wielder.
+ - /amateur - Lists Of all amateur.
+ - /knights - Lists Of all knights.
+ - /explorer - Lists Of all explorer.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "addwielder"), addsudo, pass_args=True)
